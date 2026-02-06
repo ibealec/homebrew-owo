@@ -1,22 +1,22 @@
 class OwoCli < Formula
   desc "Natural language to shell commands using AI"
-  homepage "https://github.com/context-labs/uwu"
-  version "1.1.0"
+  homepage "https://github.com/ibealec/owo"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/context-labs/uwu/releases/download/v#{version}/owo-cli-darwin-arm64"
-      sha256 "04c2a55ba4a83bed5e6ba2bfe5086c23650f3aed61fa3e1fae34418fabc29fbc"
+      url "https://github.com/ibealec/owo/releases/download/v#{version}/owo-cli-darwin-arm64"
+      sha256 "cac0285e58a4380207ab06fe17dfa5bcfd2935ea5480d6ac4ce337230259ff0d"
     else
-      url "https://github.com/context-labs/uwu/releases/download/v#{version}/owo-cli-darwin-x64"
-      sha256 "e1aad5ca7f585a846c74296229276cf0139aa23d2087f588e86415ad01265371"
+      url "https://github.com/ibealec/owo/releases/download/v#{version}/owo-cli-darwin-x64"
+      sha256 "4a8a7d735596187b8e8a486cf848c6b7f7dc79c1af77a850d7c2c0cfc6e9d7fe"
     end
   end
 
   on_linux do
-    url "https://github.com/context-labs/uwu/releases/download/v#{version}/owo-cli-linux-x64"
-    sha256 "5243990f445e6ed0f350ad7a05dce55580e1d5c2b02ffd5689a6d8235b622aba"
+    url "https://github.com/ibealec/owo/releases/download/v#{version}/owo-cli-linux-x64"
+    sha256 "acf3bfe498bb28e004edbeb54afa7cdcf2a0a24ba8f1b4af65a22c215ee3f644"
   end
 
   def install
